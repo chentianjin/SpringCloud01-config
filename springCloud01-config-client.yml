@@ -8,7 +8,7 @@ server:
 spring:
    profiles: dev
    application: 
-      name: springCloud01-config-cloent
+      name: springCloud01-config-client-dev
 eureka:
    client:
       service-url:
@@ -19,7 +19,7 @@ server:
 spring:
    profiles: test
    application: 
-      name: springCloud01-config-cloent
+      name: springCloud01-config-client-test
 eureka:
    client:
       service-url:
