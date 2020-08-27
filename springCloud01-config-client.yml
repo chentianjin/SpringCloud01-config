@@ -1,0 +1,27 @@
+spring:
+   profiles:
+      active:
+      - dev
+---
+server:
+   port: 8201
+spring:
+   profiles: dev
+   application: 
+      name: springCloud01-config-cloent
+eureka:
+   client:
+      service-url:
+         defaultZone: http://eureka7001.com:7001/eureka/
+---
+server:
+   port: 8202
+spring:
+   profiles: test
+   application: 
+      name: springCloud01-config-cloent
+eureka:
+   client:
+      service-url:
+         defaultZone: http://eureka7001.com:7001/eureka/
+# 请保证保存的编码集为utf-8
